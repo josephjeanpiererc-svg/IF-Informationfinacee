@@ -1,0 +1,16 @@
+<!-- ADMIN USERS MODAL SNIPPET -->
+<div class="modal" id="userAdminModal">
+  <div class="modal-content">
+    <span class="modal-close" onclick="closeModal()">✕</span>
+    <div class="modal-title">Administrar Usuarios</div>
+    <div style="padding:12px;">
+      <div style="display:flex; gap:8px; margin-bottom:8px;">
+        <input id="newUserEmail" placeholder="email" style="flex:1; padding:8px;">
+        <input id="newUserDni" placeholder="dni" style="width:120px; padding:8px;">
+        <input id="newUserPwd" placeholder="pwd" style="width:120px; padding:8px;">
+        <button class="btn-secondary" onclick="createAdminUserFromModal()">Agregar</button>
+      </div>
+      <div id="userAdminList" style="max-height:260px; overflow:auto;"></div>
+    </div>
+  </div>
+</div>
